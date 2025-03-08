@@ -1,12 +1,5 @@
 import { Component } from '@angular/core';
 
-@Component({
-  selector: 'app-show-text',
-  standalone: true,
-  imports: [],
-  templateUrl: './show-text.component.html',
-  styleUrl: './show-text.component.css'
-})
-export class ShowTextComponent {
+@Component({ selector: 'app-show-text', templateUrl: './show-text.component.html', styleUrls: ['./show-text.component.css'] }) export class ShowTextComponent { userText = ''; displayedText = '';
 
-}
+showText() { this.displayedText = this.userText; } }

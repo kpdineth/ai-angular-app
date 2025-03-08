@@ -1,7 +1,3 @@
-<div class="container"> <h2>Show Text Component</h2>
+<input type="text" [(ngModel)]="userText" placeholder="Enter text here..." /> <button (click)="showText()">Show Text</button>
 
-    <!-- Text input with two-way data binding --> <input [(ngModel)]="inputText" placeholder="Type something here..." type="text" />
-    
-    <!-- The button that, when clicked, calls displayText() --> <button (click)="displayText()">DISPLAY</button>
-    
-    <!-- Where the bold text is shown after the button is clicked --> <p *ngIf="displayedText"> <strong>{{ displayedText }}</strong> </p> </div>
+<div *ngIf="displayedText"> <strong>{{ displayedText }}</strong> </div>
